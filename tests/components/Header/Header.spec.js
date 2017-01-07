@@ -32,5 +32,13 @@ describe('(Component) Header', () => {
         </Link>
       )).to.be.true
     })
+
+    it('Should render a Link to new route', () => {
+      expect(_wrapper.contains(
+        <Link activeClassName='route--active' to='/new-route'>
+          New Route
+        </Link>
+      )).to.be.true
+    })
   })
 })
